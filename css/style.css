@@ -62,7 +62,7 @@
   width: 500px;
 }
 .ex-6-img:hover {
-  filter:grayscale();
+  filter:grayscale(1);
 }
 
 /* Esercizio 7 */

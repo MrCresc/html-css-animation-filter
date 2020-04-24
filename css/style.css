@@ -1,0 +1,275 @@
+/* Esercizio 1 */
+.ex-1-square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  transition: 2s;
+}
+.ex-1-square:hover {
+  background-color: red;
+}
+
+/* Esercizio 2 */
+.ex-2-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 3s;
+}
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* Esercizio 3 */
+.ex-3-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 1s;
+}
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+/* Esercizio 4 */
+.ex-4-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 1s;
+}
+.ex-4-square:hover {
+  background-color: inherit;
+}
+
+/* Esercizio 5 */
+.ex-5-square {
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  transition: 1s;
+}
+.ex-5-square:hover {
+  transform: scale(1.5);
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+/* Esercizio 6 */
+
+.ex-6-img {
+  width: 500px;
+}
+.ex-6-img:hover {
+  filter:grayscale();
+}
+
+/* Esercizio 7 */
+.ex-7-img {
+  width: 500px;
+  transition: 1s;
+}
+.ex-7-img:hover {
+  filter:sepia(0.8) grayscale(0.5);
+}
+
+/* Esercizio 8 */
+.ex-8-img {
+  width: 500px;
+  transition: 1s;
+}
+.ex-8-img:hover {
+  filter:sepia(0.8) grayscale(0.5);
+  border-radius: 25px;
+}
+
+/* Esercizio 9 */
+.ex-9-img {
+  margin: 50px 100px;
+  width: 400px;
+  transition: 1s;
+}
+.ex-9-img:hover {
+  filter:sepia(0.8) grayscale(0.5);
+  border-radius: 25px;
+  transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+  font-size: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Esercizio 11 */
+.ex-11-icon {
+  font-size: 50px;
+  transition: color 1s;
+}
+.ex-11-icon:hover {
+  color: red;
+  animation: spinALittleBit 1s;
+}
+@keyframes spinALittleBit {
+  0% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* Esercizio 12 */
+.ex-12-button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 70px;
+  border: 3px solid #1b3c59;
+  color: #1b3c59;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+.ex-12-top-white {
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  height: 20px;
+  top: -10px;
+  left: 10px;
+}
+.ex-12-bottom-white {
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  height: 20px;
+  top: 50px;
+  left: 120px;
+}
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite12 2s linear;
+}
+@keyframes moveTopWhite12 {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 120px;
+    }
+  100% {
+    left: 10px;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite12 2s linear;
+}
+@keyframes moveBottomWhite12 {
+  0% {
+    left: 120px;
+    }
+  50% {
+    left: 10px;
+    }
+  100% {
+    left: 120px;
+  }
+}
+
+/* Esercizio 13 */
+.ex-13-button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 70px;
+  border: 3px solid #1b3c59;
+  color: #1b3c59;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+.ex-13-top-white {
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  height: 20px;
+  top: -10px;
+  left: 10px;
+}
+.ex-13-bottom-white {
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  height: 20px;
+  top: 50px;
+  left: 120px;
+}
+.ex-13-button:hover .ex-13-top-white {
+    animation: moveTopWhite13 2s linear;
+}
+@keyframes moveTopWhite13 {
+  0% {
+    top: -10px;
+    left: 10px;
+  }
+  20% {
+    top: -10px;
+    left: 160px;
+  }
+  45% {
+    top: 60px;
+    left: 160px;
+  }
+  70% {
+    top: 60px;
+    left: -30px;
+  }
+  95% {
+    top: -10px;
+    left: -30px;
+  }
+  100% {
+    top: -10px;
+    left: 10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moveBottomWhite13 2s linear;
+}
+@keyframes moveBottomWhite13 {
+  0% {
+    top: 50px;
+    left: 120px;
+  }
+  20% {
+    top: 50px;
+    left: -30px;
+  }
+  45% {
+    top: -10px;
+    left: -30px;
+  }
+  70% {
+    top: -10px;
+    left: 160px;
+  }
+  95% {
+    top: 50px;
+    left: 160px;
+  }
+  100% {
+    top: 50px;
+    left: 120px;
+  }
+}
